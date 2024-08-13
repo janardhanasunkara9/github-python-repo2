@@ -4,10 +4,10 @@ on: push
 
 
 jobs:
-    context_job:
-      runs-on: ubuntu-latest
-      steps:
+  context_job:
+    runs-on: ubuntu-latest
+    steps:
 
-        - name: "Getting Context"
-          run: echo "GitHub Context: ${{github.event_name}} "
+      - name: "Getting Context"
+        run: echo "GitHub Context: ${{github.event_name}} "
         
