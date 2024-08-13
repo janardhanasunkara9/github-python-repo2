@@ -1,0 +1,13 @@
+## Define Workflow Name 
+name: 3_expr_context_wkfw
+on: push
+
+
+jobs:
+    context_job:
+      runs-on: ubuntu-latest
+      steps:
+
+        - name: "Getting Context"
+          run: echo "GitHub Context: ${{github.event_name}} "
+        
