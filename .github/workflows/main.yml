@@ -3,7 +3,7 @@ on: workflow_dispatch
 
 jobs:
   python_job:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: "Get Code from Repo and run it on Runner Machine"
       - uses: actions/checkout@v3
