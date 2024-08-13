@@ -9,5 +9,7 @@ jobs:
     steps:
 
       - name: "Getting Context"
-        run: echo "Hello GitHub Action ${{ github.event_name }} "
+        run: | 
+          echo "Hello GitHub Action ${{ github.event_name }} "
+          echo "The Full GitHub Context is ${{ github }} "
         
