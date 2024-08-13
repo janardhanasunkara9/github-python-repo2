@@ -14,3 +14,14 @@ jobs:
           python-version: '3.10'
       - name: "Run Python Program"
         run: python 1_python.py
+  shell_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Get Code from Repo"
+        uses: actions/checkout@v3
+
+      - name: "Run Shell Script"
+        run: |
+            echo `hostname`
+            sh shell_scrip1.sh  
+
