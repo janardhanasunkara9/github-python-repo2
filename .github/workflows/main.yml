@@ -1,5 +1,5 @@
 name: "2_python_wkflw"
-on: push
+on: workflow_dispatch
 
 jobs:
   python_job:
