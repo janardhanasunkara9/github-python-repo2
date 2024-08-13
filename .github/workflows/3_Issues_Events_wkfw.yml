@@ -22,8 +22,6 @@ jobs:
                smtp-secure: true
                from-email: janardhanasunkara9@gmail.com
                to-email: janardhanasunkara9@gmail.com
-               username: janardhanasunkara9
-               password: Anthrixmodel9!
                subject: Test Email
                body: This is a test email sent from GitHub Actions.
                html: |
