@@ -10,3 +10,22 @@ jobs:
 
             - name: "Printing Message"
               run: echo "The Actions is ${{ toJSON(github.event)}} "
+
+    send_email_job:
+        runs-on: ubuntu-latest
+        steps:
+           - name: Send Email
+             uses: hilarion5/send-mail@v1
+             with:
+               smtp-server: smtp.example.com
+               smtp-port: 465
+               smtp-secure: true
+               from-email: janardhanasunkara9@gmail.com
+               to-email: janardhanasunkara9@gmail.com
+               username: janardhanasunkara9@gmail.com
+               password: Anthrixmodel9!
+               subject: Test Email
+               body: This is a test email sent from GitHub Actions.
+               html: |
+                      <h1>This is a test email</h1>
+                      <p>Test Paragraph</p>
