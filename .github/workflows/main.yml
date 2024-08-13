@@ -15,6 +15,7 @@ jobs:
       - name: "Run Python Program"
         run: python 1_python.py
   shell_job:
+    needs: python_job
     runs-on: ubuntu-latest
     steps:
       - name: "Get Code from Repo"
@@ -23,5 +24,5 @@ jobs:
       - name: "Run Shell Script"
         run: |
             echo `hostname`
-            sh shell_scrip1.sh  
+            sh shell_script1.sh  
 
