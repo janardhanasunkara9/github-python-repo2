@@ -1,5 +1,5 @@
 name: "2_python_wkflw"
-on: workflow_dispatch
+on: push 
 
 jobs:
   python_job:
@@ -13,4 +13,4 @@ jobs:
         with:
           python-version: '3.10'
       - name: "Run Python Program"
-      - run: python 1_python.py
+        run: python 1_python.py
