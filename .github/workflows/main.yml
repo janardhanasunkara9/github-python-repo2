@@ -13,4 +13,4 @@ jobs:
         with:
           python-version: '3.10'
       - name: "Run Python Program"
-        run: echo "python 1_python.py"
+        run: python 1_python.py
