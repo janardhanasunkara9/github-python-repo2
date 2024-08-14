@@ -15,7 +15,7 @@ jobs:
       - name: "Run Python Program"
         run: python 1_python.py
   shell_job:
-    needs: python_job
+    needs: python_job  #Creating Dependencies
     runs-on: ubuntu-latest
     steps:
       - name: "Get Code from Repo"
