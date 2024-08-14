@@ -7,6 +7,7 @@ on:                         ##Defining Wkfw Events that Triggers Workflow
   push:   
     branches:               ##Defining Filters
       - feature-branch-1
+  workflow_dispatch:    
 
 jobs:
   Activity_filter_Job:
