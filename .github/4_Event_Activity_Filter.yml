@@ -10,7 +10,7 @@ on:                         ##Defining Wkfw Events that Triggers Workflow
 
 jobs:
   Activity_filter_Job:
-    runs-on: ubutu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: "Pulling Code from repo"
         uses: actions/checkout@v3
